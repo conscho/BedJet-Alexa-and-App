@@ -1,0 +1,32 @@
+{
+  "manifest": {
+    "publishingInformation": {
+      "locales": {
+        "en-US": {
+          "summary": "Control your BedJet V3 with voice commands",
+          "examplePhrases": [
+            "Alexa, tell bed jet to turn on heat",
+            "Alexa, ask bed jet for the status",
+            "Alexa, tell bed jet to set temperature to 80 degrees"
+          ],
+          "name": "BedJet Controller",
+          "description": "Control your BedJet V3 climate comfort system. Set modes, temperature, fan speed, and check status using voice commands through your BedJet Hub."
+        }
+      }
+    },
+    "apis": {
+      "custom": {
+        "endpoint": {
+          "sourceDir": "lambda",
+          "uri": "arn:aws:lambda:us-east-1:XXXXXXXXXXXX:function:bedjet-controller"
+        }
+      }
+    },
+    "manifestVersion": "1.0",
+    "privacyAndCompliance": {
+      "locales": {
+        "en-US": {}
+      }
+    }
+  }
+}

@@ -1,0 +1,156 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "invocationName": "bed jet",
+      "intents": [
+        {
+          "name": "SetModeIntent",
+          "slots": [
+            {
+              "name": "mode",
+              "type": "BEDJET_MODE"
+            }
+          ],
+          "samples": [
+            "turn on {mode}",
+            "set mode to {mode}",
+            "switch to {mode}",
+            "start {mode}",
+            "set {mode} mode",
+            "change to {mode}",
+            "{mode} mode",
+            "put it on {mode}"
+          ]
+        },
+        {
+          "name": "TurnOffIntent",
+          "slots": [],
+          "samples": [
+            "turn off",
+            "stop",
+            "shut off",
+            "power off",
+            "turn it off",
+            "shut down",
+            "standby"
+          ]
+        },
+        {
+          "name": "SetTemperatureIntent",
+          "slots": [
+            {
+              "name": "temperature",
+              "type": "AMAZON.NUMBER"
+            }
+          ],
+          "samples": [
+            "set temperature to {temperature}",
+            "set temp to {temperature}",
+            "set it to {temperature} degrees",
+            "change temperature to {temperature}",
+            "{temperature} degrees",
+            "make it {temperature} degrees",
+            "set the temperature to {temperature} degrees"
+          ]
+        },
+        {
+          "name": "SetFanIntent",
+          "slots": [
+            {
+              "name": "percent",
+              "type": "AMAZON.NUMBER"
+            }
+          ],
+          "samples": [
+            "set fan to {percent} percent",
+            "set fan speed to {percent}",
+            "fan {percent} percent",
+            "change fan to {percent}",
+            "set the fan to {percent} percent"
+          ]
+        },
+        {
+          "name": "SetPresetIntent",
+          "slots": [
+            {
+              "name": "preset",
+              "type": "AMAZON.NUMBER"
+            }
+          ],
+          "samples": [
+            "preset {preset}",
+            "memory {preset}",
+            "load preset {preset}",
+            "use preset {preset}",
+            "activate preset {preset}",
+            "run memory {preset}"
+          ]
+        },
+        {
+          "name": "SetTimerIntent",
+          "slots": [
+            {
+              "name": "hours",
+              "type": "AMAZON.NUMBER"
+            },
+            {
+              "name": "minutes",
+              "type": "AMAZON.NUMBER"
+            }
+          ],
+          "samples": [
+            "set timer for {hours} hours",
+            "set timer for {hours} hours and {minutes} minutes",
+            "run for {hours} hours",
+            "run for {minutes} minutes",
+            "set runtime to {hours} hours",
+            "set timer for {minutes} minutes"
+          ]
+        },
+        {
+          "name": "GetStatusIntent",
+          "slots": [],
+          "samples": [
+            "what's the status",
+            "get status",
+            "what mode is it on",
+            "what's the temperature",
+            "how's it doing",
+            "what is it set to",
+            "current status",
+            "check status",
+            "what's it doing"
+          ]
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.FallbackIntent",
+          "samples": []
+        }
+      ],
+      "types": [
+        {
+          "name": "BEDJET_MODE",
+          "values": [
+            { "name": { "value": "heat", "synonyms": ["heating", "warm", "warm up"] } },
+            { "name": { "value": "cool", "synonyms": ["cooling", "fan", "cool down"] } },
+            { "name": { "value": "turbo", "synonyms": ["turbo heat", "max heat", "boost"] } },
+            { "name": { "value": "dry", "synonyms": ["drying", "dry mode"] } },
+            { "name": { "value": "extended heat", "synonyms": ["ext heat", "extended", "long heat"] } }
+          ]
+        }
+      ]
+    }
+  }
+}
