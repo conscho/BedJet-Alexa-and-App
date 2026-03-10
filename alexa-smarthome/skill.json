@@ -1,0 +1,32 @@
+{
+  "manifest": {
+    "publishingInformation": {
+      "locales": {
+        "en-US": {
+          "summary": "Control your BedJet V3 as a native Alexa Smart Home device",
+          "examplePhrases": [
+            "Alexa, turn on the BedJet",
+            "Alexa, set the BedJet to 80 degrees",
+            "Alexa, turn off the BedJet"
+          ],
+          "name": "BedJet Smart Home",
+          "description": "Control your BedJet V3 climate comfort system as a native Alexa device. Set temperature, fan speed, operating mode, and power on/off with natural voice commands — no invocation name needed."
+        }
+      }
+    },
+    "apis": {
+      "smartHome": {
+        "endpoint": {
+          "uri": "arn:aws:lambda:us-east-1:XXXXXXXXXXXX:function:bedjet-smarthome"
+        },
+        "protocolVersion": "3"
+      }
+    },
+    "manifestVersion": "1.0",
+    "privacyAndCompliance": {
+      "locales": {
+        "en-US": {}
+      }
+    }
+  }
+}
